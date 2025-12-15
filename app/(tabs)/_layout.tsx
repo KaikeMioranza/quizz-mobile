@@ -1,28 +1,30 @@
-import { FontAwesome, Ionicons } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { Tabs } from "expo-router";
-
-import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 export default function TabsLayout() {
   return (
-      <Tabs screenOptions={{ tabBarActiveTintColor: 'blue' }}>
+    <Tabs screenOptions={{ tabBarActiveTintColor: "blue" }}>
       <Tabs.Screen
-        name="index"
+        name="home"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={'home-sharp'} color={color} size={24} />
+          title: "Home",
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="home-sharp" size={24} color={color} />
           ),
         }}
       />
-     <Tabs.Screen
-        name="Quizz"
+
+      <Tabs.Screen
+        name="quizz"
         options={{
-          tabBarIcon: ({ color }) =>
-            // ❌ Era color="black"
-            <MaterialIcons name="home" size={24} color={"white"} /> // ✅ AGORA USA {color}
+          title: "Iniciar Quizz",
+          tabBarIcon: ({ color }) => (
+            <MaterialIcons name="quiz" size={24} color={color} />
+          ),
         }}
       />
     </Tabs>
+
   );
 }

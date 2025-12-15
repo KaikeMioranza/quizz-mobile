@@ -7,8 +7,7 @@ export default function Home() {
     <View
       style={styles.container}
     >
-      <Text style={styles.text}>Kaike Mioranza</Text>
-      <Link href={"/home"}>Teste</Link>
+      <Link href={"/home"} style={styles.text}> Home</Link>
     </View>
   );
 }
