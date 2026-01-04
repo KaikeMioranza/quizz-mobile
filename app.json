@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "my-quizz",
-    "slug": "my-quizz",
+    "name": "Quizz",
+    "slug": "Quizz",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myquizz",
+    "scheme": "quizz",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -20,7 +20,7 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.kaikedev.myquizz"
+      "package": "com.kaikedev.Quizz"
     },
     "web": {
       "output": "static",
@@ -44,9 +44,6 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    },
-    "extra": {
-      "router": {}
     }
   }
 }

@@ -1,30 +1,23 @@
-import { Ionicons } from "@expo/vector-icons";
-import MaterialIcons from "@expo/vector-icons/MaterialIcons";
-import { Tabs } from "expo-router";
+import { Tabs } from 'expo-router';
+import { HelpCircle, Home } from 'lucide-react-native';
 
-export default function TabsLayout() {
+export default function TabLayout() {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: "blue" }}>
+    <Tabs>
       <Tabs.Screen
         name="home"
         options={{
-          title: "Home",
-          tabBarIcon: ({ color }) => (
-            <Ionicons name="home-sharp" size={24} color={color} />
-          ),
+          title: 'Home',
+          tabBarIcon: ({ color }) => <Home size={24} color={color} />,
         }}
       />
-
       <Tabs.Screen
         name="quizz"
         options={{
-          title: "Iniciar Quizz",
-          tabBarIcon: ({ color }) => (
-            <MaterialIcons name="quiz" size={24} color={color} />
-          ),
+          title: 'Iniciar Quizz',
+          tabBarIcon: ({ color }) => <HelpCircle size={24} color={color} />,
         }}
       />
     </Tabs>
-
   );
 }
